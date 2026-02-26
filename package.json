@@ -1,0 +1,34 @@
+{
+  "name": "napcat-plugin-poke-echo",
+  "plugin": "戳一戳",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "index.mjs",
+  "description": "简易插件，戳一戳会做出回应喵",
+  "author": "见崎美咲",
+  "license": "MIT",
+  "keywords": [
+    "napcat",
+    "plugin",
+    "qq",
+    "poke"
+  ],
+  "napcat": {
+    "tags": [
+      "娱乐"
+    ],
+    "minVersion": "4.14.0"
+  },
+  "dependencies": {
+    "napcat-types": "0.0.16"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "vite": "^6.0.0"
+  },
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch"
+  }
+}
