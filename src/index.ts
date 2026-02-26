@@ -14,7 +14,7 @@ export const plugin_onevent: PluginModule['plugin_onevent'] = async (ctx, event)
     if (event.post_type === EventType.NOTICE) {
         const notice = event as any;
 
-        if (notice.sub_type === 'poke') {
+        if (notice.sub_type === 'poke' && notice.self_id === notice.target_id) {
             if ('group_id' in event) {
                 sendGroupMessage(ctx, notice.group_id, getPokeReply());
             } else {
